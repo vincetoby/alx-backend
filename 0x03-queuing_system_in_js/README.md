@@ -51,6 +51,7 @@ Read or watch:
   }
 
 </details>
+
 ### .babelrc
 <details>
 <summary>Click to show/hide file contents</summary>
@@ -67,7 +68,7 @@ and…
 Don’t forget to run <pre><code>$ npm install</pre></code> when you have the **package.json
 
 
-Tasks
+# Tasks
 ## 0. Install a redis instance
 mandatory
 
@@ -78,22 +79,28 @@ $ tar xzf redis-6.0.10.tar.gz
 $ cd redis-6.0.10
 $ make
 
-    Start Redis in the background with src/redis-server
+Start Redis in the background with src/redis-server
 <pre><code>
 $ src/redis-server &
 </pre></code>
-    Make sure that the server is working with a ping <pre><code>src/redis-cli ping</pre></code>
+
+Make sure that the server is working with a ping <pre><code>src/redis-cli ping</pre></code>
+
 <pre><code>
 PONG
 </pre></code>
-    Using the Redis client again, set the value School for the key Holberton
+
+Using the Redis client again, set the value School for the key Holberton
+    
 <pre><code>
 127.0.0.1:[Port]> set Holberton School
 OK
 127.0.0.1:[Port]> get Holberton
 "School"
 </pre></code>
-    Kill the server with the process id of the redis-server (hint: use ps and grep)
+
+Kill the server with the process id of the redis-server (hint: use ps and grep)
+    
 <pre><code>
 $ kill [PID_OF_Redis_Server]
 </pre></code>
@@ -121,7 +128,7 @@ Using Babel and ES6, write a script named 0-redis_client.js. It should connect t
 
 Requirements:
 
-    To import the library, you need to use the keyword import
+To import the library, you need to use the keyword import
 <pre><code>
 bob@dylan:~$ ps ax | grep redis-server
  2070 pts/1    S+     0:00 grep --color=auto redis-server
@@ -165,7 +172,7 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 0-redis_client.js
+   * File: [0-redis_client.js](./0-redis_client.js)
 
 ## 2. Node Redis client and basic operations
 mandatory
@@ -214,7 +221,7 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 1-redis_op.js
+   * File: [1-redis_op.js](./1-redis_op.js)
 
 ## 3. Node Redis client and async operations
 mandatory
@@ -247,7 +254,7 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 2-redis_op_async.js
+   * File: [2-redis_op_async.js](./2-redis_op_async.js)
 
 ## 4. Node Redis client and advanced operations
 mandatory
@@ -307,7 +314,7 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 4-redis_advanced_op.js
+   * File: [4-redis_advanced_op.js](./4-redis_advanced_op.js)
 
 ## 5. Node Redis client publisher and subscriber
 mandatory
@@ -391,7 +398,7 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 5-subscriber.js, 5-publisher.js
+   * File: [5-subscriber.js](./5-subscriber.js), [5-publisher.js](./5-publisher.js)
 
 ## 6. Create the Job creator
 mandatory
@@ -431,7 +438,7 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 6-job_creator.js
+   * File: [6-job_creator.js](./6-job_creator.js)
 
 ## 7. Create the Job processor
 
@@ -488,7 +495,7 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 6-job_processor.js
+   * File: [6-job_processor.js](./6-job_processor.js)
 
 ## 8. Track progress and errors with Kue: Create the Job creator
 mandatory
@@ -582,7 +589,7 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 7-job_creator.js
+   * File: [7-job_creator.js](./7-job_creator.js)
 
 ## 9. Track progress and errors with Kue: Create the Job processor
 mandatory
@@ -669,7 +676,7 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 7-job_processor.js
+   * File: [7-job_processor.js](./7-job_processor.js)
 
 ## 10. Writing the job creation function
 mandatory
@@ -718,7 +725,7 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 8-job.js
+   * File: [8-job.js](./8-job.js)
 
 ## 11. Writing the test for job creation
 mandatory
@@ -756,7 +763,7 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 8-job.test.js
+   * File: [8-job.test.js](./8-job.test.js)
 
 ## 12. In stock?
 mandatory
@@ -842,7 +849,7 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 9-stock.js
+   * File: [9-stock.js](./9-stock.js)
 
 ## 13. Can I have a seat?
 #advanced
@@ -930,6 +937,6 @@ Repo:
 
    * GitHub repository: alx-backend
    * Directory: 0x03-queuing_system_in_js
-   * File: 100-seat.js
+   * File: [100-seat.js](./100-seat.js)
 
 
